@@ -12,12 +12,17 @@ contract SausageTokenTest is Test {
 
     function setUp() public {
         vm.prank(owner);
-        token = new SausageToken("Sausage Token", "SAUSAGE", 1_000_000 ether, treasury, 100);
+        token = new SausageToken("Laura", "LAURA", 1_000_000 ether, treasury, 100);
     }
 
     function testInitialSupply() public {
         assertEq(token.totalSupply(), 1_000_000 ether);
         assertEq(token.balanceOf(owner), 1_000_000 ether);
+    }
+
+    function testNameAndSymbol() public {
+        assertEq(token.name(), "Laura");
+        assertEq(token.symbol(), "LAURA");
     }
 
     function testFeeOnTransfer() public {

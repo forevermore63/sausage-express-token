@@ -1,6 +1,6 @@
-# Sausage Express Token ($SAUSAGE)
+# Laura Token ($LAURA)
 
-Value-bearing ERC-20 for the Sausage Express Empire.
+Value-bearing ERC-20 for the new Laura era / Sausage Express Empire.
 
 **Goal**: Revenue share and fees feed a treasury earmarked for the Mercedes Sprinter “Sausage Express 2.0” + amazing accommodation for the sausage army.
 
@@ -39,6 +39,8 @@ Same command with `--rpc-url $BASE_RPC` and real funds for gas.
 
 ## Tokenomics notes
 
+- Name: Laura
+- Symbol: LAURA
 - Fee (default 1%) routes to the treasury address you set.
 - You control the treasury (use a multisig for safety later).
 - Fee can be set to 0 by owner.
@@ -51,3 +53,4 @@ Same command with `--rpc-url $BASE_RPC` and real funds for gas.
 3. Update the Sausage Treasury Tracker with the contract address.
 
 Built for real value only. No fake demand, no wash trading.
+New Laura era begins.

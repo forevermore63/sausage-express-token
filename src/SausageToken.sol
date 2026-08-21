@@ -6,8 +6,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
 /**
- * @title SausageToken
- * @notice Value-bearing ERC-20 for Sausage Express Empire.
+ * @title LauraToken ($LAURA)
+ * @notice Value-bearing ERC-20 for the new Laura era / Sausage Express Empire.
  *         Transfer fee routes to a treasury controlled by the owner
  *         (intended for Mercedes Sprinter + sausage army accommodation).
  * @dev User must deploy this themselves. Never share private keys.
@@ -58,7 +58,7 @@ contract SausageToken is ERC20, Ownable, ReentrancyGuard {
         emit TreasuryUpdated(newTreasury);
     }
 
-    // Optional: owner can mint more if needed for future phases (bonding curve, rewards)
+    // Optional: owner can mint more if needed for future phases
     function mint(address to, uint256 amount) external onlyOwner {
         _mint(to, amount);
     }

@@ -12,14 +12,14 @@ contract DeployScript is Script {
         vm.startBroadcast(deployerPrivateKey);
 
         SausageToken token = new SausageToken(
-            "Sausage Token",
-            "SAUSAGE",
+            "Laura",
+            "LAURA",
             1_000_000_000 * 1e18, // 1 billion tokens
             treasury,
             100 // 1% fee
         );
 
-        console.log("SausageToken deployed at:", address(token));
+        console.log("Laura Token ($LAURA) deployed at:", address(token));
         console.log("Treasury set to:", treasury);
 
         vm.stopBroadcast();
